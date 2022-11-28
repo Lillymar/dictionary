@@ -24,10 +24,13 @@ function handleResponse(response){
         setKeyword (event.target.value);
     }
 
-    return( <div className="Dictionary">
+    return( 
+    <div className="Dictionary">
+        <section>
     <form onSubmit={search}>
         <input type="search" onChange={handleKeywordChange} />
     </form>
+    </section>
     <Results results={results} />
       </div>
     );

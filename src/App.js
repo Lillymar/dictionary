@@ -1,6 +1,6 @@
 import './App.css';
 import Dictionary from "./Dictionary"
-import bgVideo from "./bgVideo.mp4"
+import bgVideo from "./books.mp4"
 
 function App() {
   return (
@@ -15,10 +15,9 @@ function App() {
        <h3> Dictionary</h3>
 </header>
 <main>
-  <Dictionary/>
+  <Dictionary />
 </main>
 <footer>
-
 This project was coded by{" "}
 <a
   href="https://www.linkedin.com/in/lillymardiazsein/"
@@ -42,7 +41,7 @@ and{" "}
   rel="noopener noreferrer"
 >
   hosted on Netlify
-</a>
+</a> 
 </footer>
 </div>
     </div>

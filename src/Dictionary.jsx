@@ -11,6 +11,7 @@ function handleResponse(response){
     setResults(response.data[0]);
 }
 
+
     function search(event){
         event.preventDefault();
 
@@ -27,10 +28,15 @@ function handleResponse(response){
     return( 
     <div className="Dictionary">
         <section>
-    <form onSubmit={search}>
+    <form className="search-form" onSubmit={search}>
         <input type="search" onChange={handleKeywordChange} />
     </form>
+     <div className="hint">
+       <em> <strong> 
+            suggestion words:</strong> sun, forest, wood, color...</em>
+    </div>
     </section>
+   
     <Results results={results} />
       </div>
     );

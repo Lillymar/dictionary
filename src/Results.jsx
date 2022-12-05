@@ -18,11 +18,15 @@ export default function Results(props) {
           })}
           </section>
             {props.results.meanings.map(function(meaning, index){
+              if(index < 3){
                 return (
-                <section key={index}>
+                  <section key={index}>
                     <Meaning meaning={meaning} />
                     </section>
                 );
+              } else {
+                return <></>
+              }
             })}
         </div>
     );
